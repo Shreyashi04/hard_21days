@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>21 Days Hard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="startBox" id="startBox">
+
+    <h2>Start Your 21 Day Journey 🔥</h2>
+
+    <input type="date" id="startDate">
+
+    <button class="startBtn" onclick="saveStartDate()">
+      Start Challenge
+    </button>
+
+  </div>
+
+  <div class="card hidden" id="card">
+
+    <div class="success" id="success">
+      DAY COMPLETED 🔥
+    </div>
+
+    <div class="top">
+
+      <div class="day" id="dayText">
+        Day 1
+      </div>
+
+      <div class="streak" id="streakText">
+        🔥 0
+      </div>
+
+    </div>
+
+    <div class="date" id="todayDate"></div>
+
+    <div class="quote" id="quote"></div>
+
+    <button class="addBtn" onclick="addTask()">
+      + Add Task
+    </button>
+
+    <div id="tasks"></div>
+
+    <button class="completeBtn" onclick="completeDay()">
+      Complete Day
+    </button>
+
+    <button class="resetBtn" onclick="resetAll()">
+      Reset Challenge
+    </button>
+
+    <div class="progressBox">
+
+      <div>
+        21 Day Progress
+      </div>
+
+      <div class="progressBar">
+        <div class="progress" id="progress"></div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      One day at a time.
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
